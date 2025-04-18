@@ -865,7 +865,7 @@ def format_string_pointer_field(node, field):
 def format_char_field(node, field):
     return "'%s'" % format_char(node[field])
 
-def format_bitmapset_field(node, field):
+def format_bitmapset_field(node, field, **kwargs):
     return format_bitmapset(node[field])
 
 def format_generated_when(node, field):
